@@ -1,0 +1,402 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
+    <title>Airline with Prices Carousel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    />
+    <style>
+      :root {
+        --base-color: #0b2554;
+        --border: 1px solid #eee;
+        --text-color: #565a5c;
+        --card-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+      }
+      body {
+        background-color: #edf4f7;
+        font-size: 1em;
+      }
+      .owl-carousel .owl-nav button.owl-prev,
+      .owl-carousel .owl-nav button.owl-prev,
+      .owl-carousel button.owl-dot.owl-nav {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        display: block;
+        padding: 0 0.3em !important;
+        font-size: 3em;
+        margin: 0;
+        cursor: pointer;
+        color: var(--base-color);
+        transform: translate(-50%, -50%);
+      }
+      .owl-carousel .owl-nav button.owl-next,
+      .owl-carousel .owl-nav button.owl-next,
+      .owl-carousel button.owl-dot.owl-nav {
+        position: absolute;
+        right: -23px;
+        top: 50%;
+        display: block;
+        padding: 0 0.3em !important;
+        font-size: 3em;
+        margin: 0;
+        cursor: pointer;
+        color: var(--base-color);
+        transform: translate(-50%, -50%);
+      }
+      .airlinePriceCarousel .owl-carousel .item img {
+        width: 80px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .owl-theme .owl-nav [class*="owl-"]:hover {
+        background-color: var(--base-color);
+      }
+      .airlinePriceCarousel .owl-carousel .item figure {
+        margin: 0;
+      }
+      .airlinePriceCarousel .owl-carousel .item figure a {
+        display: block;
+        text-align: center;
+        max-width: 100%;
+        transition: all 0.3s;
+        padding: 3em;
+        text-decoration: none;
+        color: #565a5c;
+      }
+      .airlinePriceCarousel .owl-carousel .item figure a:hover {
+        box-shadow: 0 11px 13.35px 1.65px rgba(148, 148, 148, 0.23);
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="airlinePriceCarousel">
+      <div class="card">
+        <div class="card-body">
+          <div class="owl-carousel owl-theme owl-loaded owl-drag">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(-861px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 3448px;
+                "
+              >
+                <div
+                  class="owl-item cloned"
+                  style="width: 277.333px; margin-right: 10px"
+                >
+                  <div class="item">
+                    <figure>
+                      <a href="#">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/iata.jpg"
+                            alt="Airline"
+                            width="100%"
+                          />
+                        </div>
+                        <figcaption class="item-info">
+                          <div class="item-name">Airline</div>
+                          <div class="item-price">₦ 999,999.99</div>
+                        </figcaption>
+                      </a>
+                    </figure>
+                  </div>
+                </div>
+                <div
+                  class="owl-item cloned"
+                  style="width: 277.333px; margin-right: 10px"
+                >
+                  <div class="item">
+                    <figure>
+                      <a href="#">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/iata.jpg"
+                            alt="Airline"
+                            width="100%"
+                          />
+                        </div>
+                        <figcaption class="item-info">
+                          <div class="item-name">Airline</div>
+                          <div class="item-price">₦ 999,999.99</div>
+                        </figcaption>
+                      </a>
+                    </figure>
+                  </div>
+                </div>
+                <div
+                  class="owl-item cloned"
+                  style="width: 277.333px; margin-right: 10px"
+                >
+                  <div class="item">
+                    <figure>
+                      <a href="#">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/iata.jpg"
+                            alt="Airline"
+                            width="100%"
+                          />
+                        </div>
+                        <figcaption class="item-info">
+                          <div class="item-name">Airline</div>
+                          <div class="item-price">₦ 999,999.99</div>
+                        </figcaption>
+                      </a>
+                    </figure>
+                  </div>
+                </div>
+                <div
+                  class="owl-item active"
+                  style="width: 277.333px; margin-right: 10px"
+                >
+                  <div class="item">
+                    <figure>
+                      <a href="#">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/iata.jpg"
+                            alt="Airline"
+                            width="100%"
+                          />
+                        </div>
+                        <figcaption class="item-info">
+                          <div class="item-name">Airline</div>
+                          <div class="item-price">₦ 999,999.99</div>
+                        </figcaption>
+                      </a>
+                    </figure>
+                  </div>
+                </div>
+                <div
+                  class="owl-item active"
+                  style="width: 277.333px; margin-right: 10px"
+                >
+                  <div class="item">
+                    <figure>
+                      <a href="#">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/iata.jpg"
+                            alt="Airline"
+                            width="100%"
+                          />
+                        </div>
+                        <figcaption class="item-info">
+                          <div class="item-name">Airline</div>
+                          <div class="item-price">₦ 999,999.99</div>
+                        </figcaption>
+                      </a>
+                    </figure>
+                  </div>
+                </div>
+                <div
+                  class="owl-item active"
+                  style="width: 277.333px; margin-right: 10px"
+                >
+                  <div class="item">
+                    <figure>
+                      <a href="#">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/iata.jpg"
+                            alt="Airline"
+                            width="100%"
+                          />
+                        </div>
+                        <figcaption class="item-info">
+                          <div class="item-name">Airline</div>
+                          <div class="item-price">₦ 999,999.99</div>
+                        </figcaption>
+                      </a>
+                    </figure>
+                  </div>
+                </div>
+                <div
+                  class="owl-item"
+                  style="width: 277.333px; margin-right: 10px"
+                >
+                  <div class="item">
+                    <figure>
+                      <a href="#">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/iata.jpg"
+                            alt="Airline"
+                            width="100%"
+                          />
+                        </div>
+                        <figcaption class="item-info">
+                          <div class="item-name">Airline</div>
+                          <div class="item-price">₦ 999,999.99</div>
+                        </figcaption>
+                      </a>
+                    </figure>
+                  </div>
+                </div>
+                <div
+                  class="owl-item"
+                  style="width: 277.333px; margin-right: 10px"
+                >
+                  <div class="item">
+                    <figure>
+                      <a href="#">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/iata.jpg"
+                            alt="Airline"
+                            width="100%"
+                          />
+                        </div>
+                        <figcaption class="item-info">
+                          <div class="item-name">Airline</div>
+                          <div class="item-price">₦ 999,999.99</div>
+                        </figcaption>
+                      </a>
+                    </figure>
+                  </div>
+                </div>
+                <div
+                  class="owl-item"
+                  style="width: 277.333px; margin-right: 10px"
+                >
+                  <div class="item">
+                    <figure>
+                      <a href="#">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/iata.jpg"
+                            alt="Airline"
+                            width="100%"
+                          />
+                        </div>
+                        <figcaption class="item-info">
+                          <div class="item-name">Airline</div>
+                          <div class="item-price">₦ 999,999.99</div>
+                        </figcaption>
+                      </a>
+                    </figure>
+                  </div>
+                </div>
+                <div
+                  class="owl-item cloned"
+                  style="width: 277.333px; margin-right: 10px"
+                >
+                  <div class="item">
+                    <figure>
+                      <a href="#">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/iata.jpg"
+                            alt="Airline"
+                            width="100%"
+                          />
+                        </div>
+                        <figcaption class="item-info">
+                          <div class="item-name">Airline</div>
+                          <div class="item-price">₦ 999,999.99</div>
+                        </figcaption>
+                      </a>
+                    </figure>
+                  </div>
+                </div>
+                <div
+                  class="owl-item cloned"
+                  style="width: 277.333px; margin-right: 10px"
+                >
+                  <div class="item">
+                    <figure>
+                      <a href="#">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/iata.jpg"
+                            alt="Airline"
+                            width="100%"
+                          />
+                        </div>
+                        <figcaption class="item-info">
+                          <div class="item-name">Airline</div>
+                          <div class="item-price">₦ 999,999.99</div>
+                        </figcaption>
+                      </a>
+                    </figure>
+                  </div>
+                </div>
+                <div
+                  class="owl-item cloned"
+                  style="width: 277.333px; margin-right: 10px"
+                >
+                  <div class="item">
+                    <figure>
+                      <a href="#">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/iata.jpg"
+                            alt="Airline"
+                            width="100%"
+                          />
+                        </div>
+                        <figcaption class="item-info">
+                          <div class="item-name">Airline</div>
+                          <div class="item-price">₦ 999,999.99</div>
+                        </figcaption>
+                      </a>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <button type="button" role="presentation" class="owl-prev">
+                <span aria-label="Previous">‹</span></button
+              ><button type="button" role="presentation" class="owl-next">
+                <span aria-label="Next">›</span>
+              </button>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+
+          600: {
+            items: 3,
+          },
+
+          1000: {
+            items: 4,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
